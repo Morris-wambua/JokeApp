@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokes App</title>
+
+    <style>
+        h1{color: red;
+        text-align: center;}
+         button{
+             background-color: cadetblue;
+             color: darkred;
+             height: 50px;
+             width: 100px;
+             align-content: center;
+         }
+         .bodycontent{
+             display: flex;
+             flex-wrap: wrap;
+             flex-direction: column;
+             align-content: center;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="bodycontent">
+        <h1>Welcome to Jokes App</h1>
+
+        <p id="jokeHolder" th:text="${joke}">Jokes here!</p>
+
+        <button>More Jokes</button>
+    </div>
+
+</body>
+</html>
